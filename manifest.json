@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Google Maps with Points and Clusters",
+  "name": "Google Maps with Points and Clusters - Created By Daniel Smolinski",
   "icons": [
     {
       "src": "favicon.ico",
