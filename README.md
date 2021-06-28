@@ -29,7 +29,6 @@ npm test
 
 👤 **Daniel Smolinski**
 
-* Website: github.com/posiek07
-* Github: [@posiek07](https://github.com/posiek07)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/daniel-smolinski-502a141ab\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/daniel-smolinski-502a141ab\/)
-
+- Website: github.com/posiek07
+- Github: [@posiek07](https://github.com/posiek07)
+- LinkedIn: [@https:\/\/www.linkedin.com\/in\/daniel-smolinski-502a141ab\/](https://linkedin.com/in/https://www.linkedin.com/in/daniel-smolinski-502a141ab/)
