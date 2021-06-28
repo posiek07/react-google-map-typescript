@@ -1,11 +1,13 @@
 {
-  "name": "my-app",
+  "name": "cluster-map-react-typescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.9",
+    "@types/geojson": "^7946.0.7",
+    "@types/google-map-react": "^2.1.1",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.11",
@@ -13,15 +15,23 @@
     "autoprefixer": "^10.2.6",
     "cross-env": "^7.0.3",
     "delay-cli": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "geojson": "^0.5.0",
+    "google-map-react": "^2.1.10",
+    "msw": "^0.30.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "supercluster": "^7.1.3",
+    "swr": "^0.5.6",
     "tailwindcss": "^2.2.4",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "use-supercluster": "^0.2.9"
   },
   "scripts": {
     "start": "run-p watch:css react-scripts:start",
@@ -47,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-test-renderer": "^17.0.1"
   }
 }

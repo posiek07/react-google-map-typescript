@@ -1,22 +1,35 @@
-# cra-template-tailwindcss-typescript
+<h1 align="center">Welcome to cluster-google-map-react-typescript 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-A streamlined [Tailwind CSS](https://tailwindcss.com) template for [Create React App](https://github.com/facebook/create-react-app) in [TypeScript](https://www.typescriptlang.org/).
+> React App for displaying clusters and associated articles on Google Map.
 
-> This template installs and sets up [Tailwind CSS](https://tailwindcss.com) with TypeScript support.
+### ✨ [Demo](cluster-google-map-react-typescript.github.io)
+
+## Install
+
+```sh
+npm install
+```
 
 ## Usage
 
-```bash
-npx create-react-app --template tailwindcss-typescript
+```sh
+npm start
 ```
 
-## Credits
+## Run tests
 
-This project was made possible thanks to the following projects.
+```sh
+npm test
+```
 
-1. [GeoffSelby/cra-template-tailwindcss](https://github.com/GeoffSelby/cra-template-tailwindcss) - A streamlined Tailwind CSS template for Create React App (in JavaScript).
-2. [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) - An official TypeScript template for create-react-app.
+## Author
 
-## License
+👤 **Daniel Smolinski**
 
-MIT © [Sung M. Kim](https://sung.codes)
+* Website: github.com/posiek07
+* Github: [@posiek07](https://github.com/posiek07)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/daniel-smolinski-502a141ab\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/daniel-smolinski-502a141ab\/)
+
