@@ -1,6 +1,5 @@
 {
   "name": "cluster-map-react-typescript",
-  "homepage": "http://posiek07.github.io/react-google-map-typescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
