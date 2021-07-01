@@ -4,11 +4,6 @@ import useSeen from "./hooks/useSeen";
 import useMaps from "./hooks/useMaps";
 import useSelectedPoints from "./hooks/useFetchPoints";
 
-export interface LocationCoords {
-  latitude: number;
-  longitude: number;
-}
-
 function App() {
   const { seen, setSeenHandler, turnSeen, setTurnSeenHandler } = useSeen();
   const {

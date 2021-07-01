@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { LocationCoords } from "../components/Map/Map";
+import { Product } from "../helpers/helper";
 
 
 export default function useSelectedPoints({
@@ -7,7 +8,7 @@ export default function useSelectedPoints({
   data,
 }: {
   clusterProducts: any[];
-  data: any[];
+  data: Product[];
 }) {
   const [selectedMarkerProducts, setSelectedMarkerProducts] = useState<any[]>(
     []
@@ -25,9 +26,9 @@ export default function useSelectedPoints({
   const setSelectedMarkerHandler = ({ latitude, longitude }: LocationCoords) => {
     setSelectedMarkerProducts(
       data.filter(
-        (marker: { location: LocationCoords }) =>
-          marker.location.latitude === latitude &&
-          marker.location.longitude === longitude
+        (product: Product) =>
+          product.location.latitude === latitude &&
+          product.location.longitude === longitude
       )
     );
   };

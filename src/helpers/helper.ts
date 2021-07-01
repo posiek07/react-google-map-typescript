@@ -31,18 +31,16 @@ const createPoint = (marker: Product) => {
     },
     geometry: {
       type: "Point",
-      coordinates: [
-        parseFloat(marker.location.longitude),
-        parseFloat(marker.location.latitude),
-      ],
+      coordinates: [marker.location.longitude, marker.location.latitude],
     },
   };
 };
 
 export interface Product {
   id: string;
-  section: any;
+  section: string;
   user: { id: string };
+  title: string;
   status: string;
-  location: { longitude: string; latitude: string };
+  location: { longitude: number; latitude: number };
 }

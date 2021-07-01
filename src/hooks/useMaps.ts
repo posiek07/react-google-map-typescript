@@ -9,7 +9,7 @@ export default function useMaps({
   seen,
   turnSeen,
 }: {
-  seen: any[];
+  seen: string[];
   turnSeen: boolean;
 }) {
   const mapRef = useRef<null | any>();

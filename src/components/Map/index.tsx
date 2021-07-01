@@ -1,5 +1,5 @@
 import GoogleMapReact from "google-map-react";
-import { LocationCoords } from "../../App";
+import { LocationCoords } from "./Map";
 import ItemMarker from "../ItemMarker/index";
 import ClusterMarker from "../ClusterMarker/index";
 import { iMapProps } from "./Map";

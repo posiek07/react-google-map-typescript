@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { LocationCoords } from "../../App";
+import { Product } from "../../helpers/helper";
 import ArticleCard from "../ArticleCard";
 import { iArticleListProps } from "./ArticleList";
 
@@ -24,11 +24,7 @@ const ArticleList = ({
       <div className="flex flex-col" role="list">
         {!!selectedMarkerProducts &&
           selectedMarkerProducts.map(
-            (product: {
-              location: LocationCoords
-              title: string;
-              id: any;
-            }) => (
+            (product: Product) => (
               <ArticleCard
                 key={product.id}
                 id={product.id}
