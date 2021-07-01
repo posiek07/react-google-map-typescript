@@ -1,4 +1,7 @@
-import ArticleCard from "./ArticleCard";
+import { memo } from "react";
+import { LocationCoords } from "../../App";
+import ArticleCard from "../ArticleCard";
+import { iArticleListProps } from "./ArticleList";
 
 const ArticleList = ({
   selectedMarkerProducts,
@@ -7,14 +10,7 @@ const ArticleList = ({
   seen,
   turnSeen,
   setTurnSeen,
-}: {
-  selectedMarkerProducts: any[];
-  zoomToPoint: (product: any) => void;
-  setSeen: (product: any) => void;
-  seen: string[];
-  turnSeen: boolean;
-  setTurnSeen: () => void;
-}) => {
+}: iArticleListProps) => {
   return (
     ///* that could be also some nice card list */
     <div className="flex flex-col flex-1 overflow-auto h-[50vh] max-h-[50vh] md:min-h-[100vh]">
@@ -29,7 +25,7 @@ const ArticleList = ({
         {!!selectedMarkerProducts &&
           selectedMarkerProducts.map(
             (product: {
-              location: { latitude: any; longitude: any };
+              location: LocationCoords
               title: string;
               id: any;
             }) => (
@@ -48,4 +44,4 @@ const ArticleList = ({
   );
 };
 
-export default ArticleList;
+export default memo(ArticleList);

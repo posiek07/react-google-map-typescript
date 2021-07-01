@@ -1,6 +1,6 @@
 import { getByAltText, render, within } from "@testing-library/react";
-import ArticleList from "../ArticleList";
-import data from "../../mocks/data.json";
+import ArticleList from "../index";
+import data from "../../../mocks/data.json";
 
 describe("ArticleList", () => {
   it("render the items and check dynamically if they display correctly", async () => {

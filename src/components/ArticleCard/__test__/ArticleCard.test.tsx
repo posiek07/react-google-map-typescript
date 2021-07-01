@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import ArticleCard from "../ArticleCard";
+import ArticleCard from "../index";
 
 let product = {
   id: "10",

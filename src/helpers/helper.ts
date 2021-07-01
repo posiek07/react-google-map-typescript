@@ -1,48 +1,13 @@
-export const getPoints = (markers: any, turnSeen: boolean, seen: string[]) =>
-  markers.map(
-    (marker: {
-      id: any;
-      section: any;
-      user: { id: any };
-      status: any;
-      location: { longitude: string; latitude: string };
-    }) =>
-      turnSeen
-        ? // flilters seen artcile markers from the map
-          !seen.includes(marker.id) && {
-            type: marker.section,
-            properties: {
-              cluster: false,
-              markerId: marker.id,
-              userId: marker.user.id,
-              category: marker.status,
-              product: marker,
-            },
-            geometry: {
-              type: "Point",
-              coordinates: [
-                parseFloat(marker.location.longitude),
-                parseFloat(marker.location.latitude),
-              ],
-            },
-          }
-        : {
-            type: marker.section,
-            properties: {
-              cluster: false,
-              markerId: marker.id,
-              userId: marker.user.id,
-              category: marker.status,
-              product: marker,
-            },
-            geometry: {
-              type: "Point",
-              coordinates: [
-                parseFloat(marker.location.longitude),
-                parseFloat(marker.location.latitude),
-              ],
-            },
-          }
+export const getPoints = (
+  product: Product[],
+  turnSeen: boolean,
+  seen: string[]
+) =>
+  product.map((marker: Product) =>
+    turnSeen
+      ? // flilters seen artcile product markers from the map
+        !seen.includes(marker.id) && createPoint(marker)
+      : createPoint(marker)
   );
 
 export const fetcher = async (
@@ -53,3 +18,31 @@ export const fetcher = async (
   const res = await fetch(input, init);
   return res.json();
 };
+
+const createPoint = (marker: Product) => {
+  return {
+    type: marker.section,
+    properties: {
+      cluster: false,
+      markerId: marker.id,
+      userId: marker.user.id,
+      category: marker.status,
+      product: marker,
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        parseFloat(marker.location.longitude),
+        parseFloat(marker.location.latitude),
+      ],
+    },
+  };
+};
+
+export interface Product {
+  id: string;
+  section: any;
+  user: { id: string };
+  status: string;
+  location: { longitude: string; latitude: string };
+}

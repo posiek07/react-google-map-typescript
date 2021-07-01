@@ -1,16 +1,11 @@
+import { IArticleCardProps } from "./ArticleCard"
 const ArticleCard = ({
   title,
   id,
   zoomToPoint,
   setSeen,
   seen,
-}: {
-  title: string;
-  id: string;
-  zoomToPoint: () => void;
-  setSeen: () => void;
-  seen: boolean;
-}) => {
+}: IArticleCardProps) => {
   return (
     <div
       className="my-1 bg-blue-200 flex justify-between px-10"

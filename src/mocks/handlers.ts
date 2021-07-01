@@ -1,6 +1,8 @@
 import { rest } from "msw";
 import data from "./data.json";
 
+
+// to converted into object for quicker testing
 let newData = JSON.stringify(data);
 newData = JSON.parse(newData);
 
