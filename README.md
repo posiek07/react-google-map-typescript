@@ -5,7 +5,7 @@
 
 > React App for displaying clusters and associated articles on Google Map.
 
-### ✨ [Demo](cluster-google-map-react-typescript.github.io)
+### ✨ [Demo](https://posiek07.github.io/react-google-map-typescript/)
 
 ## Install
 
